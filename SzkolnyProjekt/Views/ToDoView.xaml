@@ -1,0 +1,89 @@
+﻿<UserControl x:Class="SzkolnyProjekt.Views.ToDoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SzkolnyProjekt.Views" xmlns:controls="clr-namespace:SzkolnyProjekt.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="400">
+    <Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBlock Text="Zmień motyw:" Foreground="Black" FontSize="20"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120px"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel>
+                    <Canvas Grid.Column="0">
+                        <Button BorderThickness="0" Height="55" Width="55" Background="Transparent">
+                            <Ellipse Width="50" Height="50" Stroke="Black">
+                                <Ellipse.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF536B8F"/>
+                                        <GradientStop Color="#FF459FF9" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                        </Button>
+                    </Canvas>
+                    <Canvas HorizontalAlignment="Center" >
+                        <Button BorderThickness="0" Height="55" Width="55" Background="Transparent">
+                            <Ellipse Width="50" Height="50" Stroke="Black">
+                                <Ellipse.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FFFF7E58"/>
+                                        <GradientStop Color="#FFF3EE7F" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                        </Button>
+                    </Canvas>
+                    <Canvas HorizontalAlignment="Right">
+                        <Button BorderThickness="0" Height="55" Width="55" Background="Transparent">
+                            <Ellipse Width="50" Height="50" Stroke="Black">
+                                <Ellipse.Fill>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FFB4B4B4"/>
+                                        <GradientStop Color="#FFD452F1" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                        </Button>
+                    </Canvas>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="2" Background="LightGray" Margin="0 0 0 5" Width="250px" Height="320" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <StackPanel>
+                    <ItemsControl>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <controls:ToDoTask/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="3">
+                <TextBox Text="{Binding Task}" FontSize="15" Width="250"></TextBox>
+            </Grid>
+            <Grid Grid.Row="4" Margin="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Button Margin="0 2 150 0" Content="Dodaj" Background="Green" Width="50" FontSize="15"/>
+                    <Button Content="Edytuj" Background="DodgerBlue"  Width="50" FontSize="15"/>
+                    <Button Margin="150 0 0 0" Content="Usuń" Background="Red"  Width="50" FontSize="15"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

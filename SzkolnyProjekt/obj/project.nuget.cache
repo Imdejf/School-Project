@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "PgTIDE6horaR6SUtHsbl4gpqoCQdlKYDNZBVd5qlkFr/p2btNRltWg98xv9WljbOUoA5TMp7IZ4KjaF0Y2TTqw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dawid\\source\\repos\\SzkolnyProjekt\\SzkolnyProjekt\\SzkolnyProjekt.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dawid\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "C:\\Users\\dawid\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
