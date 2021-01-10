@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Security.Policy;
-using System.Security.RightsManagement;
-using System.Text;
 
 namespace SzkolnyProjekt.Model
 {

@@ -1,15 +1,26 @@
 ﻿<Application x:Class="SzkolnyProjekt.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:SzkolnyProjekt"
-             xmlns:views="clr-namespace:SzkolnyProjekt.Views"
-             xmlns:viewmodels="clr-namespace:SzkolnyProjekt.ViewModels"
-             >
+             xmlns:viewmodels ="clr-namespace:SzkolnyProjekt.ViewModels"
+             xmlns:views ="clr-namespace:SzkolnyProjekt.Views"
+             xmlns:local="clr-namespace:SzkolnyProjekt">
+               
+
     <Application.Resources>
         <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Indigo.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
             <DataTemplate DataType="{x:Type viewmodels:ToDoViewModel}">
                 <views:ToDoView/>
             </DataTemplate>
+
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

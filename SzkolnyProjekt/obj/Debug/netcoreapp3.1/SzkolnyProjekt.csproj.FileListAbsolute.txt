@@ -25,3 +25,6 @@ C:\Users\dawid\source\repos\SzkolnyProjekt\SzkolnyProjekt\obj\Debug\netcoreapp3.
 C:\Users\dawid\source\repos\SzkolnyProjekt\SzkolnyProjekt\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\dawid\source\repos\SzkolnyProjekt\SzkolnyProjekt\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\dawid\source\repos\SzkolnyProjekt\SzkolnyProjekt\obj\Debug\netcoreapp3.1\SzkolnyProjekt.csproj.CopyComplete
+C:\Users\dawid\source\repos\SzkolnyProjekt\SzkolnyProjekt\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\dawid\source\repos\SzkolnyProjekt\SzkolnyProjekt\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\dawid\source\repos\SzkolnyProjekt\SzkolnyProjekt\obj\Debug\netcoreapp3.1\App.baml

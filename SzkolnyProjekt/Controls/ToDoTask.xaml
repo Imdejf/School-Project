@@ -11,10 +11,10 @@
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
-        <CheckBox Background="White"/>
+        <CheckBox IsChecked="{Binding IsSelected}" Background="White"/>
         <StackPanel Grid.Column="1">
-            <TextBlock Text="Wiadomość testowa" Foreground="Black" FontSize="15"/>
-            
+            <TextBox IsEnabled="False" Height="auto" Width="200px" Text="{Binding Task}" TextWrapping="Wrap" AcceptsReturn="True" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Foreground="Black" FontSize="15"/>
+            <TextBlock Text="{Binding DateCreated}"></TextBlock>
         </StackPanel>
     </Grid>
 </UserControl>
